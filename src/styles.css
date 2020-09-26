@@ -1,0 +1,90 @@
+
+.hero, .hero-back {
+ 
+ background: #333;
+ background-size: cover;
+ height: 100%;
+ position: relative;
+ overflow: hidden;
+ z-index: 10;
+ transition: all 0.1s ease;
+}
+
+
+.hero .container-fluid, .hero-back .container-fluid {
+ margin-top: 80px;
+ z-index: 100;
+ color: #FFF;
+
+ font-family: Arial Black, Helvetica, sans-serif;
+}
+
+.hero-back {
+ background: url("../src/images/jumbo.jpg") no-repeat 0 0%;
+ background-size: cover;
+ position: absolute;
+ top: 0;
+ left: 0;
+ height: 100%;
+ width: 100%;
+ z-index: -100;
+}
+
+footer div{
+    background-color: black;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  
+  .single-chart {
+    width: 33%;
+    justify-content: space-around ;
+  }
+  
+  .circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+  }
+  
+  .circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+  }
+  
+  .circle {
+    fill: none;
+    stroke-width: 3.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+  }
+  
+  @keyframes progress {
+    0% {
+      stroke-dasharray: 0 100;
+    }
+  }
+  
+  .circular-chart.orange .circle {
+    stroke: #ff9f00;
+  }
+  
+  .circular-chart.green .circle {
+    stroke: #4CC790;
+  }
+  
+  .circular-chart.blue .circle {
+    stroke: #3c9ee5;
+  }
+  
+  .percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.3em;
+    text-anchor: middle;
+  }

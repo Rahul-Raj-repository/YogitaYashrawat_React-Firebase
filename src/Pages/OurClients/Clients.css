@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  color: inherit;
+  list-style: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e8e8e8;
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-150%);
+            transform: translateX(-150%);
+  }
+}
+@media (max-width: 1024px) {
+  @-webkit-keyframes marquee {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-125%);
+              transform: translateX(-125%);
+    }
+  }
+  @keyframes marquee {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-125%);
+              transform: translateX(-125%);
+    }
+  }
+}
+@media (max-width: 768px) {
+  @-webkit-keyframes marquee {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-166.65%);
+              transform: translateX(-166.65%);
+    }
+  }
+  @keyframes marquee {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-166.65%);
+              transform: translateX(-166.65%);
+    }
+  }
+}
+#marquee {
+  padding: 50px 0;
+  width: 100%;
+}
+#marquee .view {
+  overflow: hidden;
+  width: 100%;
+}
+#marquee .pic-container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-animation: marquee 30s infinite linear;
+          animation: marquee 30s infinite linear;
+}
+#marquee .pic-container .pic {
+  flex-basis: 15%;
+  flex-shrink: 0;
+}
+@media (max-width: 1024px) {
+  #marquee .pic-container .pic {
+    flex-basis: 25%;
+  }
+}
+@media (max-width: 768px) {
+  #marquee .pic-container .pic {
+    flex-basis: 30.33%;
+  }
+}
+#marquee img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+
+
