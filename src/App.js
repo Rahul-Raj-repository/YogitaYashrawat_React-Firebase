@@ -7,6 +7,9 @@ import Profile from "./Pages/Profile/Profile"
 import Signup from "./Pages/Signup/Signup"
 import Login from "./Pages/Login/Login"
 import {toast, ToastContainer} from "react-toastify"
+import ContactUS from "./Pages/ContactUs/ContactUs"
+import AboutUs from "./Pages/AboutUs/AboutUs"
+import Gallery from "./Pages/Gallery/Gallery"
 
 class App extends Component{
 
@@ -47,6 +50,16 @@ class App extends Component{
           <Route path="/chat"
           render={props=> <Chat showToast={this.showToast} {...props}/>}
           />
+          <Route path="/contactus"
+          render={props=> <ContactUS showToast={this.showToast} {...props}/>}
+          />
+          <Route path="/aboutus"
+          render={props=> <AboutUs showToast={this.showToast} {...props}/>}
+          />
+          <Route path="/gallery"
+          render={props=> <Gallery showToast={this.showToast} {...props}/>}
+          />
+
         </Switch>
       </Router>
     )

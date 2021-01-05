@@ -3,20 +3,22 @@ import Base from '../../Components/Base'
 import "../../styles.css"
 import Footer from '../../Components/Footer'
 import Clients from '../OurClients/Clients'
-import maam from "../../images/maam.png"
+import maam from "../../images/maam.jpg"
 import title from "../../images/title.png"
 import chatsnap from "../../images/chatsnap.png"
 import {Link} from "react-router-dom"
+import Testimonial from '../Testimonial/Testimonial'
 
 function Home() {
     return (
     <div>
         <Base/>
-        <div class="container hero">
+        <div class="container-fluid hero">
         <div class="container-fluid inner">
-            <div class="row pt-5">
+            <div class="row pt-3">
             <div class="col-sm-6 px-5 py-5">
-              <h2 className="text-secondary"><b>\"SAFALTA MILTI NAHI HAI, USE RACHNA PADTA HAI"</b></h2>
+              <h1 className="text-secondary"><b>" सफलता  मिलती  नहीं  है, उसे  रचना पड़ता  है |"</b></h1>
+              <h5 className="text-secondary text-right"><b>- योगिता यश रावत</b></h5>
                <button className="btn btn-primary">Learn more</button>
                <div className="col-sm-2 "></div>
                 <div className="col-sm-10 float-right mt-5">
@@ -24,7 +26,7 @@ function Home() {
                 </div>
             </div>
             <div className="col-sm-1 "></div>
-            <div className="col-sm-4 ">
+            <div className="col-sm-4">
               <img className="img-fluid mb-3" src={maam} height="500px" ></img>
             </div>
            
@@ -68,8 +70,11 @@ function Home() {
                 a 15.9155 15.9155 0 0 1 0 31.831
                 a 15.9155 15.9155 0 0 1 0 -31.831"
             />
-            <text x="18" y="16.35" class="percentage">1000+</text>
-            <text x="18" y="21.35" class="percentage">Seminars</text>
+            <text x="18" y="11.35" class="percentage">1000+</text>
+            <text x="18" y="15.35" class="percentage">Seminars</text>
+            <text x="18" y="16.00" class="percentage">________</text>
+            <text x="18" y="21.50" class="percentage">4000+</text>
+            <text x="18" y="25.35" class="percentage">Trainings</text>
           </svg>
         </div>
       
@@ -93,9 +98,9 @@ function Home() {
       </div>
       <div className="row mt-3 d-flex justify-content-center">
         <div className="col-md-6 bg-dark rounded">
-          <h3 className="text-light mx-3 mt-5"><b>Have any life or career related questions?</b></h3>
-          <h3 className="text-warning mx-3 mt-3"><b>Ask the experts</b></h3>
-          <h4 className="text-light mx-3 mt-3">Feel Free to check out our Instant messaging feature...</h4>
+          <h3 className="text-light mx-3 mt-5"><b>Have any Life or Career related questions?</b></h3>
+          <h3 className="text-warning mx-3 mt-3"><b>Ask the Experts</b></h3>
+          <h4 className="text-light mx-3 mt-3">Feel Free to check out our Instant Messaging feature...</h4>
           <div className="mt-3 mb-2 d-flex justify-content-center">
             <Link to="/login"><button className="btn btn-primary mr-3"><b>LOGIN IN</b></button></Link>
           </div>
@@ -108,6 +113,9 @@ function Home() {
         </div>
         </div>
       </div>
+
+      <Testimonial/>
+
       <div className="d-flex justify-content-center mt-5">
        <h2 className="text-dark ">Latest Videos </h2></div>
       <div className="row d-flex justify-content-center">

@@ -1,0 +1,56 @@
+.image{
+    margin-top: 60px;
+    background-image: url("./about-us-2.png");
+    height:350px;
+   
+   }
+   .aboutMe{
+     text-align: center;
+     padding-top: 50px;
+   
+   }
+   .mamImage{
+     margin-top: 30px;
+     margin-left: 100px;
+   color:#f1f1f1
+   }
+   .intro{
+     margin-top: -400px;
+     margin-left: 700px;
+   }
+   .personalQualities{
+     margin-top: 190px;
+     height:450px;
+     background-color: #f7f7f7;
+   }
+   .heading{
+   margin-left: 90px;
+   padding-top: 50px;
+   }
+   .contentPara{
+     margin-left: 90px;
+     /* font-weight: 900; */
+     opacity: 0.8;
+   }
+   .p2{
+     margin-left: 90px;
+   }
+   
+   
+
+   
+   .plugins{
+     margin-top: -330px;
+     margin-left: 800px;
+   }
+   .plugins2{
+     margin-top: -330px;
+     margin-left: 1000px
+   
+   }
+   .plugins3{
+     margin-top: -280px;
+   }
+   .dbInfo{
+     height: 600px;
+   }

@@ -79,7 +79,7 @@ export class Signup extends Component {
   
     render() {
         return (
-          <div className="container-fluid bg-secondary">
+          <div>
            <div className="row mt-5"><div className="col pb-5"><Base/></div></div>
             <div className="row mt-5 mb-5 ">
               <div className="col-md-5 px-5 offset-sm-3 text-left bg-light rounded ">
@@ -102,7 +102,7 @@ export class Signup extends Component {
                     <h5 id="2"></h5>
                     <button type="submit" onClick={this.Wait} className="btn btn-success btn-block mb-2">SIGNUP</button>
 
-                    <p className="mb-2"> Already have an account?
+                    <p className="mb-2"> <span className="text-dark">Already have an account?</span>
                         <Link className="text-primary" to="/login"><u> Login here</u></Link>
                     </p>
                     <p className="mb-5" id="1" style={{color:"red"}}></p>

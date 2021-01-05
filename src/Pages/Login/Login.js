@@ -4,6 +4,7 @@ import Base from "../../Components/Base"
 import Footer from "../../Components/Footer"
 import {Link} from "react-router-dom"
 import LoginString from './LoginStrings'
+import "./log.css"
 
 export class Login extends Component {
 
@@ -74,7 +75,7 @@ export class Login extends Component {
 
     render() {
         return (
-            <div className="container-fluid bg-secondary">
+            <div>
             <div className="row mt-5"><div className="col-12 pb-5"><Base/></div></div>
                 <div className="row mt-5 mb-5 ">
                   <div className="col-md-5 px-5 offset-sm-3 text-left bg-light rounded ">
@@ -92,7 +93,7 @@ export class Login extends Component {
                         <p id="1" className="text-danger"></p>
                         <h6 id="2"></h6>
                         <button onClick={this.Wait} className="btn btn-success btn-block mb-2">LOGIN</button>
-                        <p className="mb-5"> New user? 
+                        <p className="mb-5"> <span className="text-dark">New user?</span> 
                             <Link className="text-primary" to="/signup"><u> Create an account</u></Link>
                         </p>
                     </form>
