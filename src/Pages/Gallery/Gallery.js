@@ -18,9 +18,11 @@ import img14 from "./images/14.jpeg"
 import img15 from "./images/15.jpeg"
 import img16 from "./images/16.jpeg"
 import img17 from "./images/17.jpeg"
+import img18 from "./images/18.jpeg"
+import Footer from "../../Components/Footer";
 
 const imgUrls = [img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,
-  img12,img13,img14,img15,img16,img17];
+  img12,img13,img14,img15,img16,img17,img18];
 
 class Gallery extends React.Component {
   constructor(props) {
@@ -38,12 +40,15 @@ class Gallery extends React.Component {
 
   render() {
     return (
+      <div>
       <div className="gallery-container">
       <Base/>
         <h1 className="pt-5 text-secondary">Gallery</h1>
         <div className="gallery-grid">
           {imgUrls.map(this.renderImageContent)}
         </div>
+      </div>
+      <Footer/>
       </div>
     )
   }

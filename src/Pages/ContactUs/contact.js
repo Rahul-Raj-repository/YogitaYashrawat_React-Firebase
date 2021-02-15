@@ -1,6 +1,5 @@
 import React from 'react'
-// import contacttexture from './images/contact texture.png'
-import map from './images/map.gif'
+import "./Contact.css"
 import Contactform from './Contactform'
 import{Row,Col}from 'react-bootstrap';
 
@@ -10,43 +9,31 @@ export default function Contact() {
         <Row>
         <Col lg={12} xs={12}> 
         <br/>
-            <h1 className="contact">CONTACT</h1>
+            <h1 className="contact">DIRECTIONS</h1>
         </Col>
         </Row>
 
         <Row>
 
-                    <Col lg={6} xs={12} className="map">
-                        <img className="img-fluid" src={map}></img>
-                        <br/><br/><br/>
-                        <Row>
-                        
-                            <Col lg={3} xs={12} className="add2">
-                            <p><b>
-                            HEAD OFFICE<br/>
-                            Street Address<br/>
-                            City Name<br/>
-                            Street12345
+                    <div className="col-sm-6 map">
+                    <div class="mapouter">
+                     <div className="row d-flex justify-content-center">
+                     <iframe width="548" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=The%20Cognate%20Minds,%20Indrapuri%20C%20sector,%20Sector%20C,%20Indrapuri,%20Bhopal,%20Madhya%20Pradesh&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+                        </div> 
+                    </div>                    
+                            <div className="col-sm-6 add2">
+                            <br/><br/>
+                            <p><b><u>OFFICE</u>
+                            <br/>
                             </b></p>
-                            </Col>
-                    <Col lg={3} xs={12} className="add2">
-                        <p>
-                        Near Aashima Mall<br/>
-                        Bhopal<br/>
-                        info@propertyask.com
-                        </p>
-                    </Col>
-                    </Row>
+                            <p>
+                                <b>The Cognate Minds, Sector C, Indrapuri, Bhopal, Madhya Pradesh 462022, India</b> 
+                            </p>
+                            <iframe width="548" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=The%20Cognate%20Minds,%20Indrapuri%20C%20sector,%20Sector%20C,%20Indrapuri,%20Bhopal,%20Madhya%20Pradesh&t=k&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            </div>
+                                        
+
                     
-                    </Col>
-
-
-                    <Col lg={6} xs={12} className="form">
-
-                        <Contactform />
-
-                        
-                    </Col>
                 </Row>
 
 

@@ -109,9 +109,9 @@ class Contactform extends React.Component {
 
   render() {
     return (
-    <Row>
+    <div>
 
-      <Col lg={12} xs={12} id="main-registration-container">
+      <div id="main-registration-container">
         <div id="register">
             {/* <h3>Registration page</h3> */}
             <form method="post" className="contactForm"  name="userRegistrationForm"  onSubmit= {this.submituserRegistrationForm} >
@@ -130,8 +130,8 @@ class Contactform extends React.Component {
             
             </form>
         </div>
-      </Col>
-      </Row>
+      </div>
+      </div>
 
       );
   }

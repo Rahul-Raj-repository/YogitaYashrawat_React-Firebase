@@ -7,7 +7,7 @@ import maam from "../../images/maam.jpg"
 import title from "../../images/title.png"
 import chatsnap from "../../images/chatsnap.png"
 import {Link} from "react-router-dom"
-import Testimonial from '../Testimonial/Testimonial'
+import Testimonial1 from '../Testimonial/Testimonial1'
 
 function Home() {
     return (
@@ -15,11 +15,11 @@ function Home() {
         <Base/>
         <div class="container-fluid hero">
         <div class="container-fluid inner">
-            <div class="row pt-3">
+            <div class="row">
             <div class="col-sm-6 px-5 py-5">
               <h1 className="text-secondary"><b>" सफलता  मिलती  नहीं  है, उसे  रचना पड़ता  है |"</b></h1>
               <h5 className="text-secondary text-right"><b>- योगिता यश रावत</b></h5>
-               <button className="btn btn-primary">Learn more</button>
+              <Link to="/aboutus"><button className="btn btn-primary">Learn more</button></Link>
                <div className="col-sm-2 "></div>
                 <div className="col-sm-10 float-right mt-5">
                   <img className="img-fluid" src={title}></img>
@@ -100,7 +100,7 @@ function Home() {
         <div className="col-md-6 bg-dark rounded">
           <h3 className="text-light mx-3 mt-5"><b>Have any Life or Career related questions?</b></h3>
           <h3 className="text-warning mx-3 mt-3"><b>Ask the Experts</b></h3>
-          <h4 className="text-light mx-3 mt-3">Feel Free to check out our Instant Messaging feature...</h4>
+          <h5 className="text-light mx-3 mt-3">Feel Free to check out our Instant Messaging<br/>feature...</h5>
           <div className="mt-3 mb-2 d-flex justify-content-center">
             <Link to="/login"><button className="btn btn-primary mr-3"><b>LOGIN IN</b></button></Link>
           </div>
@@ -113,18 +113,21 @@ function Home() {
         </div>
         </div>
       </div>
-
-      <Testimonial/>
+      <div className="d-flex justify-content-center mt-5">
+       <h2 className="text-dark ">__The Proud Alumni__ </h2></div>
+      <Testimonial1/>
 
       <div className="d-flex justify-content-center mt-5">
-       <h2 className="text-dark ">Latest Videos </h2></div>
-      <div className="row d-flex justify-content-center">
+       <h2 className="text-dark ">__Latest Videos__ </h2></div>
+      <div className="row">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLVVHzeasSDCuDN4VZAyF8evpFyNW1iAlF" frameborder="0" 
+        allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLVVHzeasSDCsW5l-y4BIBJUmMIjaT11XA" frameborder="0" 
         allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <Clients/>
     </div>
-        <Footer/>
+    <div className=""><Footer/></div>
     </div>
     )
 }

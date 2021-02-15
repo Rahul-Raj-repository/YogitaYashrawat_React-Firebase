@@ -5,7 +5,7 @@ function Clients() {
     return (
         <section id="marquee">
        <div className="d-flex justify-content-center mt-4">
-       <h2 className="text-dark">Our Satisfied Clients</h2></div>
+       <h2 className="text-dark">_Our Satisfied Clients_</h2></div>
     <div className="view">
         <div className="pic-container">
             <div className="pic mx-3"><img src="" alt="" /></div>

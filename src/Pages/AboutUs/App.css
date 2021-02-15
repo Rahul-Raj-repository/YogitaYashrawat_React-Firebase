@@ -1,0 +1,210 @@
+.App {
+  text-align: center;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.About{
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.login-header{
+  text-align: center;
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App {
+  height: 120vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  opacity: 0.5;
+}
+.Appup{
+  
+  height: 120vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: black;
+}
+.About{
+  background-position: center center;
+  align-items: flex-end;
+  justify-content: center;
+
+}
+
+.App-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px;
+}
+.login-header{
+  text-align: center;
+
+}
+
+@media (min-width: 650px ) {
+  .App {
+      background-position: center center;
+  }
+
+  .App-content {
+      align-items: flex-end;
+      justify-content: center;
+  }
+  .About{
+    background-position: center center;
+    align-items: flex-end;
+    justify-content: center;
+
+  }
+  .login-header{
+    text-align: center;
+  
+  }
+}
+
+ .display-1{ 
+   /* width: 50%; */
+  position: absolute;
+  color: rgba(252, 250, 250, 0.278);
+  margin-top: 24%;
+  margin-left: 55%;
+  transform: translate(-50%,-50%);
+  font-size: 60px;
+  font-weight: 550;
+  font-style: inherit;
+  text-transform: uppercase;
+  letter-spacing: 35px;
+  z-index: 444;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* background: linear-gradient(to right transparent,transparent, black); */
+} 
+@media (max-width:991.98px) {
+  .padding {
+      padding: 1.5rem
+  }
+}
+
+@media (max-width:767.98px) {
+  .padding {
+      padding: 1rem
+  }
+}
+
+.padding {
+  padding: 5rem
+}
+
+.card {
+  position: relative;
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #d2d2dc;
+  border-radius: 11px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgb(249, 249, 250);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(212, 182, 212, 1);
+  box-shadow: 0px 0px 5px 0px rgb(161, 163, 164)
+}
+
+.card .card-body {
+  padding: 1rem 1rem
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1.25rem
+}
+
+p {
+  font-size: 0.875rem;
+  margin-bottom: .5rem;
+  line-height: 1.5rem
+}
+
+h4 {
+  line-height: .2 !important
+}
+
+.items {
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 30px
+}
+
+.slick-slide {
+  margin: 10px
+}
+
+.media iframe,
+.media-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 0;
+  border-radius: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: rgba(120, 120, 120, .1);
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center
+}
+
+.media-content:before {
+  content: '';
+  position: absolute;
+  height: 10%;
+  width: 90%;
+  left: 5%;
+  bottom: 0;
+  background: inherit;
+  background-position-y: 100%;
+  filter: blur(10px)
+}
+
+.circle .media-content:before {
+  width: 40%;
+  left: 30%
+}
+
+.profile-image {
+  width: 100%;
+  height: 400px;
+  border-top-left-radius: 11px !important;
+  border-top-right-radius: 11px
+}
+
+.card-title {
+  font-size: 19px;
+  font-weight: 200
+}
